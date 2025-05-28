@@ -12,7 +12,8 @@
   --font-grotesk: "Space Grotesk", sans-serif;
   --font-lexen: "Lexend Giga", sans-serif;
   --font-monserrat: "Montserrat", sans-serif;
-  --breakpoint-mbl: 400px;
+  --breakpoint-mbl: 490px;
   --breakpoint-pbl: 578px;
   --breakpoint-tub: 710px;
+  --breakpoint-pob: 340px;
 }
