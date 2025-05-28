@@ -1,0 +1,81 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    transform: translateY(300px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes bottomTop {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out backwards;
+  animation-delay: 2s;
+}
+
+.fade-left {
+  animation: fadeLeft 1s ease-in-out forwards;
+}
+
+.animate-from-right {
+    animation-name: fadeIn, fadeLeft;
+    animation-duration: 1.70s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.animate-from-left {
+    animation-name: fadeIn, fadeRight;
+    animation-duration: 1.50s;
+    animation-delay: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.animate-from-bottom {
+    animation-name: fadeIn, bottomTop;
+    animation-duration: 1.10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.animate-from-bottom2 {
+    animation-name: fadeIn, bottomTop;
+    animation-duration: 1.10s;
+    animation-delay: 0.10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
